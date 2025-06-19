@@ -19,7 +19,7 @@
 
 
     # para matar a dunst
-    killall dunst
+    #killall dunst
 
     # para enviar notificaciones de pruebas
-    notify-send "Hola!" "Esta es una alerta de prueba de Dunst"
+    #notify-send "Hola!" "Esta es una alerta de prueba de Dunst"
