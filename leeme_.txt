@@ -1,0 +1,10 @@
+﻿Programas necesarios para i3wm
+sudo apt install dunst scrot imagenmagic feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome
+
+Los archivos:
+- i3blocks
+- i3 
+- dunst
+Deben de ir en el directorio ~/.config
+
+Lo mejor que se puede hacer para instalar i3wm, es partir desde una distro en la que se instaló XFCE4 o que venía por defecto con el mismo.

@@ -1,0 +1,25 @@
+[global]
+    #tamaño de fuente
+    font = "Monospace 12"    
+    # Posición (top-left, top-center, top-right, bottom-left, bottom-center, bottom-right)
+    origin = bottom-right
+
+    # Distancia desde el borde (en píxeles)
+    offset = 50x100
+
+    # Alineación (left, center, right)
+    alignment = left
+
+    # Ancho y altura máxima
+    #width = 300
+    #height = 100
+    #Tiempo en segundos
+    timeout = 5  
+
+
+
+    # para matar a dunst
+    killall dunst
+
+    # para enviar notificaciones de pruebas
+    notify-send "Hola!" "Esta es una alerta de prueba de Dunst"
