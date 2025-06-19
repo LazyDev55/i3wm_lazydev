@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+#sudo apt install pamixer
+
+# Show volume percentage, including values over 100%
+# Requires: pamixer
+
+get_volume() {
+    if ! command -v pamixer &>/dev/null; then
+        echo "pamixer not found"
+        exit 1
+    fi
+
+    vol=$(pamixer --get-volume)
+    muted=$(pamixer --get-mute)
+
+    if [[ "$muted" == "true" ]]; then
+        echo "MUTE"
+    else
+        echo "${vol}%"
+    fi
+}
+
+case $BLOCK_BUTTON in
+  3) pamixer -t ;;               # Right click: toggle mute
+  4) pamixer -i 5 ;;             # Scroll up: volume up
+  5) pamixer -d 5 ;;             # Scroll down: volume down
+esac
+
+get_volume
