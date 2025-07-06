@@ -9,11 +9,6 @@ Deben de ir en el directorio ~/.config
 
 Lo mejor que se puede hacer para instalar i3wm, es partir desde una distro en la que se instaló XFCE4 o que venía por defecto con el mismo.
 
-Para el tema del polkit se deben de hacer estos procedimientos:
-sudo apt install policykit-1-gnome (en caso de que ya no esté instalado con el comando anterior más arriba)
-El comando de abajo es para decirle a i3 que usaremos el policity kit de gnome como principal para i3.
-export XDG_CURRENT_DESKTOP=i3
-
 Comandos para usar la configuración de i3 presente:
 (Mod4)=(windows)
 
