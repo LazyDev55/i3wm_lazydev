@@ -1,5 +1,5 @@
 ﻿Programas necesarios para i3wm
-sudo apt install dunst scrot imagenmagic feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx neofetch 
+sudo apt install dunst scrot imagenmagic feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx neofetch diodon
 
 Los archivos:
 - i3blocks
