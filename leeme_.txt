@@ -1,5 +1,5 @@
 ﻿Programas necesarios para i3wm
-sudo apt install dunst scrot imagenmagic feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx
+sudo apt install dunst scrot imagenmagic feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx neofetch 
 
 Los archivos:
 - i3blocks
@@ -8,3 +8,68 @@ Los archivos:
 Deben de ir en el directorio ~/.config
 
 Lo mejor que se puede hacer para instalar i3wm, es partir desde una distro en la que se instaló XFCE4 o que venía por defecto con el mismo.
+
+Para el tema del polkit se deben de hacer estos procedimientos:
+sudo apt install policykit-1-gnome (en caso de que ya no esté instalado con el comando anterior más arriba)
+El comando de abajo es para decirle a i3 que usaremos el policity kit de gnome como principal para i3.
+export XDG_CURRENT_DESKTOP=i3
+
+Comandos para usar la configuración de i3 presente:
+(Mod4)=(windows)
+
+=== Gestión básica de ventanas ===
+Mod4 + Enter         - Abrir terminal (Terminator)
+Mod4 + q             - Cerrar ventana actual
+Mod4 + f             - Alternar pantalla completa
+Mod4 + Shift + Espacio - Alternar entre flotante/tiling
+Mod4 + Espacio       - Cambiar foco entre ventanas flotantes/tiling
+
+=== Movimiento y enfoque ===
+Mod4 + j / Mod4 + FlechaIzquierda   - Enfocar ventana izquierda
+Mod4 + k / Mod4 + FlechaAbajo       - Enfocar ventana inferior
+Mod4 + l / Mod4 + FlechaArriba      - Enfocar ventana superior
+Mod4 + ñ / Mod4 + FlechaDerecha     - Enfocar ventana derecha
+Mod4 + Shift + j / Mod4 + Shift + FlechaIzquierda - Mover ventana izquierda
+Mod4 + Shift + k / Mod4 + Shift + FlechaAbajo     - Mover ventana abajo
+Mod4 + Shift + l / Mod4 + Shift + FlechaArriba    - Mover ventana arriba
+Mod4 + Shift + ñ / Mod4 + Shift + FlechaDerecha   - Mover ventana derecha
+
+=== Disposición de ventanas ===
+Mod4 + h             - Dividir horizontalmente
+Mod4 + v             - Dividir verticalmente
+Mod4 + s             - Cambiar a disposición apilada
+Mod4 + w             - Cambiar a disposición en pestañas
+Mod4 + e             - Alternar división
+
+=== Workspaces ===
+Mod4 + 1 a 0         - Cambiar al workspace 1-10
+Mod4 + Shift + 1 a 0 - Mover ventana al workspace 1-10
+
+=== Sistema ===
+Mod4 + Shift + c     - Recargar configuración
+Mod4 + Shift + r     - Reiniciar i3
+Mod4 + Shift + e     - Salir de i3
+Mod4 + Shift + x     - Bloquear pantalla con efecto blur
+Tecla ImprPant       - Captura de pantalla con Flameshot
+
+=== Volumen ===
+XF86AudioRaiseVolume - Subir volumen 10%
+XF86AudioLowerVolume - Bajar volumen 10%
+XF86AudioMute        - Silenciar/desilenciar
+XF86AudioMicMute     - Silenciar micrófono
+
+=== Lanzadores ===
+F12                  - Abrir dmenu_run
+Mod4 + d             - Abrir rofi
+Mod4 + Shift + d     - Abrir synapse
+
+=== Modo Resize ===
+Mod4 + r             - Entrar en modo resize
+  j / FlechaIzquierda  - Reducir ancho
+  ñ / FlechaDerecha    - Aumentar ancho
+  k / FlechaAbajo      - Aumentar alto
+  l / FlechaArriba     - Reducir alto
+  Enter / Escape       - Salir del modo resize
+
+
+

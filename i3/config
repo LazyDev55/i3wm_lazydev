@@ -236,6 +236,9 @@ exec --no-startup-id diodon
 #esto es para que inicie activo el numlock
 exec --no-startup-id numlockx on
 
+#inicia con terminator abierto en i3
+exec --no-startup-id terminator
+
 #esto de aqui abajo son para los polkits
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 #sudo apt install policykit-1-gnome
