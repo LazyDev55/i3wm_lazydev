@@ -291,7 +291,7 @@ bindsym --release Print exec --no-startup-id "flameshot gui"
 bindsym $mod+Shift+x exec --no-startup-id scrot /tmp/screen_locked.png && convert /tmp/screen_locked.png -blur 0x12 /tmp/screen_blurred.png && i3lock -i /tmp/screen_blurred.png && rm /tmp/screen_locked.png /tmp/screen_blurred.png
 #paquetes necesarios para que funcione el script de bloqueo de i3lock
 #scrot
-#imagenmagic
+#imagemagick
 #feh
 
 
