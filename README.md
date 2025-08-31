@@ -75,6 +75,8 @@ Se recomienda partir de una distribución que tenga XFCE4 instalado o que venga 
 - `F12` - Abrir dmenu_run
 - `Mod4 + d` - Abrir rofi
 - `Mod4 + Shift + d` - Abrir synapse
+- `Mod4 + t` - Abrir thunar
+- `Mod4 + b` - Abrir brave browser, Para ello, instalarlo desde su página web (https://brave.com/es/download/)
 
 ### Modo Resize
 - `Mod4 + r` - Entrar en modo resize
