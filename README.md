@@ -77,6 +77,7 @@ Se recomienda partir de una distribución que tenga XFCE4 instalado o que venga 
 - `Mod4 + Shift + d` - Abrir synapse
 - `Mod4 + t` - Abrir thunar
 - `Mod4 + b` - Abrir brave browser, Para ello, instalarlo desde su página web (https://brave.com/es/download/)
+- `Print` - Abrir flameshot
 
 ### Modo Resize
 - `Mod4 + r` - Entrar en modo resize
