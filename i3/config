@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 #aqui es necesario tener las letras roboto, pero puedes poner el que te guste
-font pango:roboto bold 14
+font pango:IBM Plex Sans bold 14
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -182,14 +182,14 @@ bar {
  colors {
 #los colores estan comentados, para que tome los colores por defecto del escritorio
 #(los colores son del formato hexadecimal, se pueden cambiar buscando en Internet estos colores)
-        #background #000000
-        #statusline #77dd77
-        #separator #77dd77
+        background #000000
+        statusline #77dd77
+        separator #77dd77
 
-        #focused_workspace  #77dd77 #77dd77 #000000
-        #active_workspace   #77dd77 #77dd77 #77dd77
-        #inactive_workspace #000000 #000000 #77dd77
-        #urgent_workspace   #2f343a #009bbb #77dd77
+        focused_workspace  #77dd77 #77dd77 #000000
+        active_workspace   #77dd77 #77dd77 #77dd77
+        inactive_workspace #000000 #000000 #77dd77
+        urgent_workspace   #2f343a #009bbb #77dd77
     }
 #(coloca la barra de notificaciones de i3wm en la zona de arriba)
         #status_command i3status -c ~/.i3status.conf
@@ -216,7 +216,10 @@ bindsym $mod+d exec rofi -modi run -show run
 
 #(activa nitrogen al inicio)
 #se usa para poner los fondos de pantalla
-exec nitrogen --restore
+#exec nitrogen --restore
+
+#(se activa variety)
+exec --no-startup-id variety
 
 #(activa picom para las transparencias)
 exec picom --daemon
@@ -248,23 +251,29 @@ exec --no-startup-id bash -c "export XDG_CURRENT_DESKTOP=i3"
 #sinapse es un buscador de programas como lo es rofi o dmenu
 bindsym $mod+Shift+d exec synapse
 
+#ejecutar brave
+bindsym $mod+b exec brave-browser
+
+#ejecutar thunar
+bindsym $mod+t exec thunar
+
 #tambien estas configuraciones estan comentadas, para que tome los colores por defecto de i3
 #configuracion de colores
 # Colores de las ventanas
 #
-#set $bg-color            #77dd77
-#set $bg-color-border     #000000
-#set $inactive-bg-color   #000000
-#set $text-color          #000000
-#set $inactive-text-color #77dd77
-#set $urgent-bg-color     #009bbb
+set $bg-color            #77dd77
+set $bg-color-border     #000000
+set $inactive-bg-color   #000000
+set $text-color          #000000
+set $inactive-text-color #77dd77
+set $urgent-bg-color     #009bbb
  
 # Coloreando las ventanas de las ventanas
 #                          bordes             fondos               texto             indicador
-#client.focused          $bg-color-border     $bg-color          $text-color        #009bbb
-#client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #009bbb
-#client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #009bbb
-#client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color         #009bbb
+client.focused          $bg-color-border     $bg-color          $text-color        #009bbb
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #009bbb
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #009bbb
+client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color         #009bbb
 
 #configuraciones de apagado y demas
 
