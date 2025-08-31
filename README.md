@@ -16,7 +16,7 @@ sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status
 
 **Nota:** En Debian 13 se utiliza el policykit de mate (incluido en XFCE) y se reemplaza neofetch por fastfetch.
 
-## 🈯 Font Custom
+## 🈯 Font Custom (Solo aplicable en la versión de Debian 12, Ubuntu y derivadas)
 Para las fonts correspondientes de i3blocks es necesario copiar el archivo **ibm-plex-sans** desde el directorio en  que se descargó hasta el siguiente directorio **/usr/share/fonts/**
 
 ## 📁 Estructura de archivos
