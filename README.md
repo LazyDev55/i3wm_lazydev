@@ -17,14 +17,14 @@ Lo mejor que se puede hacer para instalar i3wm, es partir desde una distro en la
 Comandos para usar la configuración de i3 presente:
 (Mod4)=(windows)
 
-=== Gestión básica de ventanas ===
+#=== Gestión básica de ventanas ===
 Mod4 + Enter         - Abrir terminal (Terminator)
 Mod4 + q             - Cerrar ventana actual
 Mod4 + f             - Alternar pantalla completa
 Mod4 + Shift + Espacio - Alternar entre flotante/tiling
 Mod4 + Espacio       - Cambiar foco entre ventanas flotantes/tiling
 
-=== Movimiento y enfoque ===
+#=== Movimiento y enfoque ===
 Mod4 + j / Mod4 + FlechaIzquierda   - Enfocar ventana izquierda
 Mod4 + k / Mod4 + FlechaAbajo       - Enfocar ventana inferior
 Mod4 + l / Mod4 + FlechaArriba      - Enfocar ventana superior
@@ -34,36 +34,36 @@ Mod4 + Shift + k / Mod4 + Shift + FlechaAbajo     - Mover ventana abajo
 Mod4 + Shift + l / Mod4 + Shift + FlechaArriba    - Mover ventana arriba
 Mod4 + Shift + ñ / Mod4 + Shift + FlechaDerecha   - Mover ventana derecha
 
-=== Disposición de ventanas ===
+#=== Disposición de ventanas ===
 Mod4 + h             - Dividir horizontalmente
 Mod4 + v             - Dividir verticalmente
 Mod4 + s             - Cambiar a disposición apilada
 Mod4 + w             - Cambiar a disposición en pestañas
 Mod4 + e             - Alternar división
 
-=== Workspaces ===
+#=== Workspaces ===
 Mod4 + 1 a 0         - Cambiar al workspace 1-10
 Mod4 + Shift + 1 a 0 - Mover ventana al workspace 1-10
 
-=== Sistema ===
+#=== Sistema ===
 Mod4 + Shift + c     - Recargar configuración
 Mod4 + Shift + r     - Reiniciar i3
 Mod4 + Shift + e     - Salir de i3
 Mod4 + Shift + x     - Bloquear pantalla con efecto blur
 Tecla ImprPant       - Captura de pantalla con Flameshot
 
-=== Volumen ===
+#=== Volumen ===
 XF86AudioRaiseVolume - Subir volumen 10%
 XF86AudioLowerVolume - Bajar volumen 10%
 XF86AudioMute        - Silenciar/desilenciar
 XF86AudioMicMute     - Silenciar micrófono
 
-=== Lanzadores ===
+#=== Lanzadores ===
 F12                  - Abrir dmenu_run
 Mod4 + d             - Abrir rofi
 Mod4 + Shift + d     - Abrir synapse
 
-=== Modo Resize ===
+#=== Modo Resize ===
 Mod4 + r             - Entrar en modo resize
   j / FlechaIzquierda  - Reducir ancho
   ñ / FlechaDerecha    - Aumentar ancho
