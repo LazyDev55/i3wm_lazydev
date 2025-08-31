@@ -1,72 +1,87 @@
-﻿Programas necesarios para i3wm
+# Configuración i3wm para Debian
+
+Esta configuración proporciona un entorno i3wm optimizado para Debian, con soporte para versiones 12 y 13.
+
+## 📦 Paquetes necesarios
+
+### Para Debian 12:
+```bash
 sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx neofetch diodon
+```
 
-Config para debian 13
+### Para Debian 13:
+```bash
 sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot terminator numlockx fastfetch diodon
+```
 
-Para Debian 13 se utiliza el policykit de mate que ya viene incluido en XFCE y se reemplaza neofetch por fastfetch
+**Nota:** En Debian 13 se utiliza el policykit de mate (incluido en XFCE) y se reemplaza neofetch por fastfetch.
 
-Los archivos:
-- i3blocks
-- i3 
-- dunst
-Deben de ir en el directorio ~/.config
+## 📁 Estructura de archivos
 
-Lo mejor que se puede hacer para instalar i3wm, es partir desde una distro en la que se instaló XFCE4 o que venía por defecto con el mismo.
+Los archivos de configuración deben ubicarse en `~/.config/`:
 
-Comandos para usar la configuración de i3 presente:
-(Mod4)=(windows)
+- `i3blocks/`
+- `i3/` 
+- `dunst/`
 
-#=== Gestión básica de ventanas ===
-Mod4 + Enter         - Abrir terminal (Terminator)
-Mod4 + q             - Cerrar ventana actual
-Mod4 + f             - Alternar pantalla completa
-Mod4 + Shift + Espacio - Alternar entre flotante/tiling
-Mod4 + Espacio       - Cambiar foco entre ventanas flotantes/tiling
+## 🚀 Instalación recomendada
 
-#=== Movimiento y enfoque ===
-Mod4 + j / Mod4 + FlechaIzquierda   - Enfocar ventana izquierda
-Mod4 + k / Mod4 + FlechaAbajo       - Enfocar ventana inferior
-Mod4 + l / Mod4 + FlechaArriba      - Enfocar ventana superior
-Mod4 + ñ / Mod4 + FlechaDerecha     - Enfocar ventana derecha
-Mod4 + Shift + j / Mod4 + Shift + FlechaIzquierda - Mover ventana izquierda
-Mod4 + Shift + k / Mod4 + Shift + FlechaAbajo     - Mover ventana abajo
-Mod4 + Shift + l / Mod4 + Shift + FlechaArriba    - Mover ventana arriba
-Mod4 + Shift + ñ / Mod4 + Shift + FlechaDerecha   - Mover ventana derecha
+Se recomienda partir de una distribución que tenga XFCE4 instalado o que venga por defecto con él.
 
-#=== Disposición de ventanas ===
-Mod4 + h             - Dividir horizontalmente
-Mod4 + v             - Dividir verticalmente
-Mod4 + s             - Cambiar a disposición apilada
-Mod4 + w             - Cambiar a disposición en pestañas
-Mod4 + e             - Alternar división
+## ⌨️ Atajos de teclado principales
 
-#=== Workspaces ===
-Mod4 + 1 a 0         - Cambiar al workspace 1-10
-Mod4 + Shift + 1 a 0 - Mover ventana al workspace 1-10
+### Gestión básica de ventanas
+- `Mod4 + Enter` - Abrir terminal (Terminator)
+- `Mod4 + q` - Cerrar ventana actual
+- `Mod4 + f` - Alternar pantalla completa
+- `Mod4 + Shift + Espacio` - Alternar entre flotante/tiling
+- `Mod4 + Espacio` - Cambiar foco entre ventanas flotantes/tiling
 
-#=== Sistema ===
-Mod4 + Shift + c     - Recargar configuración
-Mod4 + Shift + r     - Reiniciar i3
-Mod4 + Shift + e     - Salir de i3
-Mod4 + Shift + x     - Bloquear pantalla con efecto blur
-Tecla ImprPant       - Captura de pantalla con Flameshot
+### Movimiento y enfoque
+- `Mod4 + j`/`←` - Enfocar ventana izquierda
+- `Mod4 + k`/`↓` - Enfocar ventana inferior  
+- `Mod4 + l`/`↑` - Enfocar ventana superior
+- `Mod4 + ñ`/`→` - Enfocar ventana derecha
+- `Mod4 + Shift + j`/`←` - Mover ventana izquierda
+- `Mod4 + Shift + k`/`↓` - Mover ventana abajo
+- `Mod4 + Shift + l`/`↑` - Mover ventana arriba
+- `Mod4 + Shift + ñ`/`→` - Mover ventana derecha
 
-#=== Volumen ===
-XF86AudioRaiseVolume - Subir volumen 10%
-XF86AudioLowerVolume - Bajar volumen 10%
-XF86AudioMute        - Silenciar/desilenciar
-XF86AudioMicMute     - Silenciar micrófono
+### Disposición de ventanas
+- `Mod4 + h` - Dividir horizontalmente
+- `Mod4 + v` - Dividir verticalmente
+- `Mod4 + s` - Cambiar a disposición apilada
+- `Mod4 + w` - Cambiar a disposición en pestañas
+- `Mod4 + e` - Alternar división
 
-#=== Lanzadores ===
-F12                  - Abrir dmenu_run
-Mod4 + d             - Abrir rofi
-Mod4 + Shift + d     - Abrir synapse
+### Workspaces
+- `Mod4 + 1-0` - Cambiar al workspace 1-10
+- `Mod4 + Shift + 1-0` - Mover ventana al workspace 1-10
 
-#=== Modo Resize ===
-Mod4 + r             - Entrar en modo resize
-  j / FlechaIzquierda  - Reducir ancho
-  ñ / FlechaDerecha    - Aumentar ancho
-  k / FlechaAbajo      - Aumentar alto
-  l / FlechaArriba     - Reducir alto
-  Enter / Escape       - Salir del modo resize
+### Sistema
+- `Mod4 + Shift + c` - Recargar configuración
+- `Mod4 + Shift + r` - Reiniciar i3
+- `Mod4 + Shift + e` - Salir de i3
+- `Mod4 + Shift + x` - Bloquear pantalla con efecto blur
+- `ImprPant` - Captura de pantalla con Flameshot
+
+### Volumen
+- `XF86AudioRaiseVolume` - Subir volumen 10%
+- `XF86AudioLowerVolume` - Bajar volumen 10%
+- `XF86AudioMute` - Silenciar/desilenciar
+- `XF86AudioMicMute` - Silenciar micrófono
+
+### Lanzadores
+- `F12` - Abrir dmenu_run
+- `Mod4 + d` - Abrir rofi
+- `Mod4 + Shift + d` - Abrir synapse
+
+### Modo Resize
+- `Mod4 + r` - Entrar en modo resize
+  - `j`/`←` - Reducir ancho
+  - `ñ`/`→` - Aumentar ancho
+  - `k`/`↓` - Aumentar alto
+  - `l`/`↑` - Reducir alto
+  - `Enter`/`Escape` - Salir del modo resize
+
+**Nota:** `Mod4` corresponde a la tecla Windows/Super.
