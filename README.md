@@ -11,7 +11,7 @@ sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status
 
 ### Para Debian 13:
 ```bash
-sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot terminator numlockx fastfetch diodon
+sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot terminator numlockx fastfetch diodon variety
 ```
 
 **Nota:** En Debian 13 se utiliza el policykit de mate (incluido en XFCE) y se reemplaza neofetch por fastfetch.
