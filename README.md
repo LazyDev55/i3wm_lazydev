@@ -6,12 +6,12 @@ Esta configuración proporciona un entorno i3wm optimizado para Debian, con sopo
 
 ### Para Debian 12 o derivadas de Ubuntu:
 ```bash
-sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx neofetch diodon variety
+sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot policykit-1-gnome terminator numlockx neofetch diodon variety thunar
 ```
 
 ### Para Debian 13:
 ```bash
-sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot terminator numlockx fastfetch diodon variety
+sudo apt install dunst scrot imagemagick feh pamixer i3 i3blocks i3lock i3status i3-wm rofi nitrogen lxappearance fonts-font-awesome picom compton synapse flameshot terminator numlockx fastfetch diodon variety thunar
 ```
 
 **Nota:** En Debian 13 se utiliza el policykit de mate (incluido en XFCE) y se reemplaza neofetch por fastfetch.
